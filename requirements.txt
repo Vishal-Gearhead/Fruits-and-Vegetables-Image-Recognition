@@ -1,0 +1,15 @@
+# Core Machine Learning & Image Processing
+tensorflow>=2.15.0
+keras>=3.0.0
+optree>=0.11.0
+numpy
+Pillow
+
+# Web Framework & API
+streamlit
+Flask
+flask-cors
+
+# Scraping & Utilities
+requests
+beautifulsoup4

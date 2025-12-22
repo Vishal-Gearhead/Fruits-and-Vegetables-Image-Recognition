@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NutriScan AI | Pro Edition</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="glow-text">NutriScan AI</h1>
+        <p class="subtitle">Professional Nutrition Analysis at your fingertips</p>
+
+        <div class="upload-card" onclick="document.getElementById('imageUpload').click()">
+            <input type="file" id="imageUpload" hidden accept="image/*">
+            <div class="icon">📸</div>
+            <span style="font-size: 1.5rem; font-weight: bold;">Click to Scan Food</span>
+        </div>
+
+        <div id="resultCard" class="result-card hidden">
+
+            <h2 id="foodName">Scanning...</h2>
+
+            <img id="previewImage" class="previewImage" src="" alt="">
+
+            <div class="info-grid">
+                <div class="info-box"><strong>CATEGORY</strong> <span id="foodType">-</span></div>
+                <div class="info-box"><strong>CALORIES</strong> <span id="calories">-</span></div>
+            </div>
+
+            <div class="benefit-box">
+                <strong>💡 HEALTH INSIGHT</strong>
+                <p id="benefitText">-</p>
+            </div>
+
+            <button onclick="location.reload()" style="margin-top:30px; padding:15px 30px; border-radius:50px; cursor:pointer; background:var(--primary); border:none; font-weight:bold;">
+                SCAN ANOTHER
+            </button>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+ 
+</body>
+</html>
